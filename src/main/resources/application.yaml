@@ -1,1 +1,17 @@
 spring.application.name: springstudents
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student_db
+    username: postgres
+    password: y2kvadim24
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
